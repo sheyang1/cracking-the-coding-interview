@@ -9,5 +9,5 @@ function isUnique(str) {
     return true;
 }
 
-
+exports.isUnique = isUnique;
 

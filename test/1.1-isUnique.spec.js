@@ -1,5 +1,6 @@
 const assert = require('assert');
-const testFile = require('src/Chapter 1/1.1-isUnique.js');
+const testFile = require('../src/Chapter1/1.1-isUnique');
+const testFile2 = require('./')
 
 describe('1.1. Is Unique', function () {
 
