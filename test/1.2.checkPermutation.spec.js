@@ -1,17 +1,10 @@
 const assert = require('assert');
-const testFile = require('../src/chapter1/1.2.checkPermutation');
+const testFile = require('../src/Chapter1/1.2.CheckPermutation');
 
-describe('1.1.2 Check Permutation', function (){
+describe('1.2 Check Permutation', function (){
     it('TRUE: "abc", "cba"', function () {
         assert.equal(
             testFile.checkPermutation("abc", "cba"),
-            true
-        )
-    });
-
-    it('TRUE: "", ""', function () {
-        assert.equal(
-            testFile.checkPermutation("", ""),
             true
         )
     });
