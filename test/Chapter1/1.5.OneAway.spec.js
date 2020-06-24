@@ -1,5 +1,5 @@
 const assert = require('assert');
-const testFile = require('../src/Chapter1/1.5.OneAway');
+const testFile = require('../../src/Chapter1/1.5.OneAway');
 
 describe('1.5 One Away', function () {
     

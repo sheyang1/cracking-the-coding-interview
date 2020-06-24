@@ -1,5 +1,5 @@
 const assert = require('assert');
-const testFile = require('../src/Chapter1/1.3.URLify');
+const testFile = require('../../src/Chapter1/1.3.URLify');
 
 describe('1.3. URLify', function () {
 

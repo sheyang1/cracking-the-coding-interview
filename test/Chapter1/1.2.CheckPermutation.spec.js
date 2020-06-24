@@ -1,5 +1,5 @@
 const assert = require('assert');
-const testFile = require('../src/Chapter1/1.2.CheckPermutation');
+const testFile = require('../../src/Chapter1/1.2.CheckPermutation');
 
 describe('1.2 Check Permutation', function (){
     it('TRUE: "abc", "cba"', function () {

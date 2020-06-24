@@ -1,5 +1,5 @@
 const assert = require('assert');
-const testFile = require('../src/Chapter1/1.6.StringCompression');
+const testFile = require('../../src/Chapter1/1.6.StringCompression');
 
 describe('1.6 StringCompression', function () {
     

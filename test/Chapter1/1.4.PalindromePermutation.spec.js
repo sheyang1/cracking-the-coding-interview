@@ -1,5 +1,5 @@
 const assert = require('assert');
-const testFile = require('../src/Chapter1/1.4.PalindromePermutation');
+const testFile = require('../../src/Chapter1/1.4.PalindromePermutation');
 
 describe('1.4. Palindrome Permutation', function () {
     describe('1.4.1. Odd Length Palindrome', function () {
