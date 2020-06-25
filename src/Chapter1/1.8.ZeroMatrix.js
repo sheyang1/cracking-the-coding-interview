@@ -1,13 +1,44 @@
 function zeroMatrix(matrix) {
-    let outputMatrix = [
-        [0, 2, 3, 4, 5],
-        [0, 0, 0, 0, 0],
-        [0, 1, 1, 1, 1]
-    ];
-    return outputMatrix;
+    let rows = [],
+        columns = [];
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] === 0) {
+                rows[i] = 0;
+                columns[j] = 0;
+            }
+        }
+    }
+
+    for (let i = 0; i < rows.length; i++) {
+        if (rows[i] === 0) {
+            nullifyRow(matrix[i]);
+        }
+    }
+
+    for (let j = 0; j < columns.length; j++) {
+        if (columns[j] === 0) {
+            nullifyColumn(matrix, j);
+        }
+    }
+    return matrix;
+}
+
+/**
+ * Helper methods
+ */
+function nullifyRow(row) {   
+    for (let i = 0; i < row.length; i++) {
+        row[i] = 0;
+    }
+    return row;
+}
+
+function nullifyColumn(matrix, col) {
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i][col] = 0;
+    }
+    return matrix;
 }
 
 exports.zeroMatrix = zeroMatrix;
-
-//Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
-
